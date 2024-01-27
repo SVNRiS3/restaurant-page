@@ -1,1 +1,3 @@
-console.log("Hello, World!");
+import { renderMainPage } from "./main-page";
+
+renderMainPage();
