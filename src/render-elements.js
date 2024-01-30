@@ -1,9 +1,9 @@
-//parent element, element type, class name*, content, src*
+//parent element, element type, class name*, content*, src*
 const renderEl = (
 	parentEl,
 	elementType,
 	className = "",
-	content,
+	content = "",
 	src = ""
 ) => {
 	const newEl = document.createElement(elementType);
