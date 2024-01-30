@@ -1,12 +1,13 @@
+//parent element, element type, class name*, content, src*
 const renderEl = (
 	parentEl,
 	elementType,
-	className,
+	className = "",
 	content,
 	src = ""
 ) => {
 	const newEl = document.createElement(elementType);
-	newEl.classList.add(className);
+	if (className) newEl.classList.add(className);
 	if (src) {
 		newEl.src = src;
 		newEl.alt = content;
