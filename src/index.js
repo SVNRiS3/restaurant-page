@@ -1,3 +1,5 @@
+import "./style.css";
+
 import { renderMainPage } from "./main-page";
 import { renderMenuPage } from "./menu-page";
 import { renderAboutPage } from "./about-page";
