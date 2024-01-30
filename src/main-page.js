@@ -12,6 +12,6 @@ const elList = [
 		<p>Join us and discover why Haz Restaurant is not just a restaurant but a destination for unforgettable culinary adventures.</p>`,
 	],
 ];
-const renderMainPage = (parentEl) => renderPage(parentEl, elList);
+const renderMainPage = (parentEl) => renderPage(elList, parentEl);
 
 export { renderMainPage };

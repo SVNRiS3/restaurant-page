@@ -14,13 +14,16 @@ const renderEl = (
 	} else {
 		newEl.innerHTML = content;
 	}
-
+	if (Array.isArray(parentEl))
+		parentEl = document.querySelectorAll(parentEl[0])[
+			parentEl[1] ? parentEl[1] : 0
+		];
 	parentEl.appendChild(newEl);
 };
 
-const renderPage = (parentEl, elList) => {
+const renderPage = (elList, parentEl = "") => {
 	for (let el of elList) {
-		renderEl(parentEl, ...el);
+		parentEl ? renderEl(parentEl, ...el) : renderEl(...el);
 	}
 };
 

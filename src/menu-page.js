@@ -4,9 +4,16 @@ import { renderPage } from "./render-elements.js";
 const elList = [
 	["h1", "main-header", "Menu"],
 	["div", "menu-part"],
+	["div", "menu-part"],
+];
+
+const sidesList = [
+	[[".menu-part", 0], "h2", "menu-header", "Sides"],
+	[[".menu-part", 0], "div", "menu-item", "Prawns"],
 ];
 const renderMenuPage = (parentEl) => {
-	renderPage(parentEl, elList);
+	renderPage(elList, parentEl);
+	renderPage(sidesList);
 };
 
 export { renderMenuPage };
