@@ -23,4 +23,4 @@ buttons.addEventListener("click", (button) => {
 		}
 	}
 });
-// renderMainPage();
+renderMainPage(parentEl);
