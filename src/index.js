@@ -8,7 +8,7 @@ const buttons = document.querySelector("nav");
 const parentEl = document.querySelector("#content");
 buttons.addEventListener("click", (button) => {
 	let buttonText = button.target.textContent;
-	if (buttonText) {
+	if (button.target.tagName === "BUTTON") {
 		parentEl.innerHTML = "";
 		switch (buttonText) {
 			case "Home":
