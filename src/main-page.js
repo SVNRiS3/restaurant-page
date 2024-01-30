@@ -2,7 +2,7 @@ import logo from "./img/logo.png";
 import { renderPage } from "./render-elements.js";
 //parent element, element type, class name*, content, src*
 const elList = [
-	["h1", "welcome", "Welcome to the Restaurant"],
+	["h1", "main-header", "Welcome to the Restaurant"],
 	["img", "logo", "hazbin restaurant logo", logo],
 	[
 		"p",
