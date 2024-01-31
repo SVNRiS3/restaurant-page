@@ -14,6 +14,7 @@ body {
 	background-color: var(--bg-color);
 	color: var(--font-color);
 	text-align: center;
+	line-height: 1.5;
 }
 
 body,
@@ -64,4 +65,34 @@ nav > button:hover {
 
 nav > button:active {
 	opacity: 0.6;
+}
+
+h1,
+.about-us {
+	margin: 20px 0;
+}
+
+.about-us {
+	font-size: 1.2rem;
+	text-align: justify;
+}
+
+.menu-part {
+	width: 150px;
+	margin-bottom: 20px;
+}
+
+.menu-header {
+	margin-bottom: 10px;
+}
+
+.menu-item,
+.contact-info-type {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.contact {
+	width: 300px;
 }
